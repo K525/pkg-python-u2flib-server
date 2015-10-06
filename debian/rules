@@ -1,6 +1,7 @@
 #!/usr/bin/make -f
 export DH_VERBOSE = 1
-export PYBUILD_NAME=python-u2flib-server
+export PYBUILD_NAME=u2flib_server
+export PYBUILD_AFTER_INSTALL=rm -rf '{destdir}/{install_dir}/test'
 
 %:
 	dh $@ --with python2 --buildsystem=pybuild
