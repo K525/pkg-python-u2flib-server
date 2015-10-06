@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/python-u2flib-server-$1\.tar\.gz/ \
+  https://github.com/Yubico/python-u2flib-server/releases .*/python-u2flib-server-(\d\S*)\.tar\.gz
